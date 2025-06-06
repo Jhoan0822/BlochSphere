@@ -136,7 +136,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- IMÁGENES ACTUALIZADAS A .PNG -->
                     <div class="grid grid-cols-2 gap-4">
                         <img src="images/prototipo_qis.png" alt="Prototipo de esfera de Bloch con su caja de control QIS UV" class="transform hover:scale-105 transition-transform duration-300 w-full h-auto object-contain">
                         <img src="images/prototipo_formula.png" alt="Esfera de Bloch con la fórmula de superposición cuántica" class="transform hover:scale-105 transition-transform duration-300 w-full h-auto object-contain mt-8">
@@ -162,7 +161,7 @@
                            Un Qubit puede estar en una superposición de los estados |0⟩ (polo norte) y |1⟩ (polo sur). Su estado se define por dos ángulos, Theta (θ) y Phi (ϕ), que posicionan un vector en la superficie de la esfera.
                         </p>
                         <div class="p-4 bg-gray-900/50 rounded-lg border border-gray-700">
-                            <img src="images/bloch_estados.png" alt="Representación de los estados base |0> y |1>" class="rounded-md w-full h-auto object-contain">
+                           <img src="images/bloch_estados.png" alt="Representación de los estados base |0> y |1>" class="rounded-md w-full h-auto object-contain">
                         </div>
                          <p class="text-gray-400">
                            Las compuertas cuánticas son operaciones matemáticas que rotan este vector. <strong>Ahora, experiméntalo tú mismo en el modelo 3D.</strong>
@@ -204,28 +203,24 @@
             </div>
         </section>
 
-        <!-- ***** NUEVA SECCIÓN: GALERÍA DE DISEÑOS ***** -->
+        <!-- Gallery Section -->
         <section id="designs" class="py-20 md:py-32 bg-black/40 fade-in-section">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="section-title">Galería de <span class="accent-color">Diseños</span></h2>
                 <p class="section-subtitle">
                     Explora las diferentes variantes y conceptos de diseño para el prototipo Esfera-E.
                 </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Variante 1 -->
-                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 p-4 transition-all duration-300 hover:border-accent-color hover:-translate-y-2">
+                <div class="flex flex-wrap justify-center items-center gap-8">
+                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 p-4 transition-all duration-300 hover:border-accent-color hover:-translate-y-2 lg:max-w-xs">
                         <img src="images/variant_red.png" alt="Diseño de Esfera-E en color rojo" class="w-full h-auto object-contain">
                     </div>
-                    <!-- Variante 2 -->
-                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 p-4 transition-all duration-300 hover:border-accent-color hover:-translate-y-2">
+                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 p-4 transition-all duration-300 hover:border-accent-color hover:-translate-y-2 lg:max-w-xs">
                         <img src="images/variant_green_darkbg.png" alt="Diseño de Esfera-E en color verde con fondo oscuro" class="w-full h-auto object-contain">
                     </div>
-                    <!-- Variante 4 -->
-                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 p-4 transition-all duration-300 hover:border-accent-color hover:-translate-y-2">
+                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 p-4 transition-all duration-300 hover:border-accent-color hover:-translate-y-2 lg:max-w-xs">
                         <img src="images/variant_white.png" alt="Diseño de Esfera-E en color blanco" class="w-full h-auto object-contain">
                     </div>
-                    <!-- Variante 5 -->
-                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 p-4 transition-all duration-300 hover:border-accent-color hover:-translate-y-2">
+                    <div class="bg-gray-900/50 rounded-lg border border-gray-800 p-4 transition-all duration-300 hover:border-accent-color hover:-translate-y-2 lg:max-w-xs">
                         <img src="images/variant_yellow.png" alt="Diseño de Esfera-E en color amarillo" class="w-full h-auto object-contain">
                     </div>
                 </div>
@@ -242,7 +237,7 @@
                      </p>
                 </div>
                 <div id="team-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                     <!-- Los miembros se cargan con JS. Edita la sección de script para añadir los nombres reales. -->
+                     <!-- Los miembros se cargan con JS. -->
                 </div>
             </div>
         </section>
@@ -275,7 +270,6 @@
         ];
         const teamContainer = document.getElementById('team-container');
         
-        // Cargar los autores principales con el ícono de persona
         teamMembers.forEach(member => {
             const memberHTML = `
                 <div class="text-center p-6 bg-gray-900/50 rounded-lg border border-gray-800 transition-all duration-300 hover:border-accent-color hover:-translate-y-2 flex flex-col">
@@ -290,7 +284,6 @@
             teamContainer.innerHTML += memberHTML;
         });
 
-        // Añadir la tarjeta del semillero con su logo personalizado
         const qisGroupHTML = `
             <div class="text-center p-6 bg-gray-900/50 rounded-lg border border-gray-800 transition-all duration-300 hover:border-accent-color hover:-translate-y-2 sm:col-span-2 md:col-span-2 flex flex-col">
                 <div class="w-24 h-24 mx-auto mb-4 flex-shrink-0 flex items-center justify-center">
@@ -302,7 +295,7 @@
                 </div>
             </div>`;
         teamContainer.innerHTML += qisGroupHTML;
-        });
+
 
         // --- Scroll Animations ---
         const sections = document.querySelectorAll('.fade-in-section');
